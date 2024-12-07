@@ -1,0 +1,919 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Source Sans;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  padding: 0 15%;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+.btn-kirp {
+  width: 208px;
+  height: 52px;
+  border-radius: 26px;
+  background: #F86D6D;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
+.btn-kirp:hover {
+  opacity: 70%;
+}
+
+.btnlit {
+  width: 255px;
+  height: 59px;
+  border-radius: 29px;
+  background: #5EB8F0;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.btnlit:hover {
+  background: #2378C9;
+  transition: 1s;
+}
+
+.btnbig {
+  padding: 18px 70px;
+  border-radius: 29px;
+  background: #5EB8F0;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.btnbig:hover {
+  background: #2378C9;
+  transition: 1s;
+}
+
+.site {
+  max-width: 1600px;
+  margin: auto;
+}
+.site .nav {
+  background: #2378C9;
+}
+.site .nav .container .navtop {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site .nav .container .navtop .navloc {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+.site .nav .container .navtop .navloc i {
+  padding-right: 10px;
+  font-size: 18px;
+}
+.site .nav .container .navtop .navphone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.site .nav .container .navtop .navphone p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.site .nav .container .navtop .navphone p i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.site .nav .container .navtop .navphone .navicon {
+  font-size: 18px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 20px;
+}
+.site .nav .container .navtop .logobars {
+  display: none;
+  background: #2378C9;
+  padding: 0px 30px;
+}
+.site .nav .container .navtop .logobars p {
+  padding: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+  float: left;
+  display: none;
+}
+.site .nav .container .navtop .logobars button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #2378C9;
+  color: #FFFFFF;
+  font-size: 30px;
+  float: right;
+  z-index: 1000;
+}
+.site .nav .container .navtop .logobars button i:last-child {
+  display: none;
+}
+.site .nav .container .navtop .logobars button:focus i:last-child {
+  display: block;
+}
+.site .nav .container .navtop .logobars button:focus i:first-child {
+  display: none;
+}
+.site .nav .container .navtop .logobars button:focus + .nav-menu {
+  display: block;
+}
+.site .nav .container .navtop .logobars button:focus ~ p {
+  display: block;
+}
+.site .nav .container .navtop .logobars .nav-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  background: #2378C9;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #FFFFFF;
+  display: none;
+  z-index: 1000;
+}
+.site .nav .container .navtop .logobars .nav-menu li {
+  padding: 20px 0;
+}
+.site .nav .container .navtop .logobars .nav-menu li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.site .nav .container .navtop .logobars .nav-menu li a i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+.site .navbar {
+  position: relative;
+}
+.site .navbar .container .logo {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.site .navbar .container .logo .logotip img {
+  width: 172px;
+  height: 44px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.site .navbar .container .logo .logo-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.site .navbar .container .logo .logo-menu ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #302D2D;
+}
+.site .navbar .container .logo .logo-menu ul li a:hover {
+  color: #2378C9;
+}
+.site .header {
+  background: #0E6EAA;
+}
+.site .header .container .head {
+  display: flex;
+  justify-content: space-between;
+}
+.site .header .container .head .head-logo {
+  width: 50%;
+  padding: 110px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.site .header .container .head .head-logo span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #C5C1FE;
+}
+.site .header .container .head .head-logo h1 {
+  font-size: 62px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.site .header .container .head .head-logo p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.site .header .container .head .head-img {
+  width: 50%;
+}
+.site .header .container .head .head-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 30px;
+}
+.site .klinika .container .about {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.site .klinika .container .about .about-img {
+  width: 35%;
+}
+.site .klinika .container .about .about-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.site .klinika .container .about .about-info {
+  width: 65%;
+  padding: 30px 0 30px 50px;
+}
+.site .klinika .container .about .about-info h2 {
+  font-size: 52px;
+  font-weight: 400;
+  color: #302D2D;
+}
+.site .klinika .container .about .about-info h2 span {
+  font-weight: 700;
+  color: #2378C9;
+}
+.site .klinika .container .about .about-info p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B6868;
+  padding: 20px 0;
+}
+.site .klinika .container .about .about-info .info-box p {
+  color: #302D2D;
+}
+.site .klinika .container .about .about-info .info-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.site .klinika .container .about .about-info .info-box ul li {
+  width: 40%;
+  font-size: 18px;
+  font-weight: 400;
+}
+.site .klinika .container .about .about-info .info-box ul li i {
+  color: #2378C9;
+  font-size: 14px;
+  padding-right: 20px;
+}
+.site .info-klinik {
+  background: #DFEEFC;
+}
+.site .info-klinik .container .info-time {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.site .info-klinik .container .info-time .box {
+  text-align: center;
+}
+.site .info-klinik .container .info-time .box .box-img {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  border: 7px solid #67A9E9;
+  background: #2378C9;
+  padding: 18px;
+  margin: auto;
+}
+.site .info-klinik .container .info-time .box .box-img .img {
+  width: 46px;
+}
+.site .info-klinik .container .info-time .box h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30.17px;
+  padding: 30px 0;
+}
+.site .info-klinik .container .info-time .box p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B6868;
+  line-height: 28.84px;
+}
+.site .spest .container .spest-vrach {
+  padding: 100px 0;
+  text-align: center;
+}
+.site .spest .container .spest-vrach h2 {
+  font-size: 52px;
+  font-weight: 400;
+}
+.site .spest .container .spest-vrach p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #6B6868;
+  padding: 20px 200px;
+}
+.site .spest .container .spest-vrach .vrach {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.site .spest .container .spest-vrach .vrach .vrach-info {
+  width: 25%;
+  border-radius: 20px;
+  background: #2378C9;
+  text-align: start;
+}
+.site .spest .container .spest-vrach .vrach .vrach-info img {
+  width: 100%;
+}
+.site .spest .container .spest-vrach .vrach .vrach-info h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 10px 20px;
+}
+.site .spest .container .spest-vrach .vrach .vrach-info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 0px 0px 20px 20px;
+}
+.site .price {
+  background: linear-gradient(-90deg, #DFEEFC, rgba(167, 210, 251, 0.9215686275));
+  padding: 100px 0;
+  position: relative;
+}
+.site .price img {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 40%;
+  height: 80%;
+}
+.site .price .container .prozub {
+  width: 60%;
+  background: #5EB8F0;
+  border-radius: 20px;
+  padding: 80px 50px;
+}
+.site .price .container .prozub .list {
+  text-align: center;
+}
+.site .price .container .prozub .list h2 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 65.36px;
+  color: #FFFFFF;
+}
+.site .price .container .prozub .list h6 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.site .price .container .prozub .list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px dotted #FFFFFF;
+}
+.site .price .container .prozub .list div p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.site .price .container .prozub .list div span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.site .novosti .container .news {
+  padding: 100px 0;
+}
+.site .novosti .container .news h2 {
+  font-size: 52px;
+  font-weight: 400;
+  color: #302D2D;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.site .novosti .container .news .newsblock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.site .novosti .container .news .newsblock .news-info {
+  width: 32%;
+  border-radius: 20px;
+  background: #F6F6F6;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.site .novosti .container .news .newsblock .news-info img {
+  width: 100%;
+}
+.site .novosti .container .news .newsblock .news-info div {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.site .novosti .container .news .newsblock .news-info div span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A9A9A9;
+}
+.site .novosti .container .news .newsblock .news-info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #302D2D;
+  line-height: 27.65px;
+  padding: 10px 20px;
+}
+.site .novosti .container .news .newsblock .news-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #56565E;
+  padding: 10px 20px;
+}
+.site .novosti .container .news .newsblock .news-info .btnbig {
+  margin: 30px;
+}
+.site .klienti {
+  background: url(/DENTAL/DENTAL/Assets/IMAGE/Rectangle\ 31.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0px;
+}
+.site .klienti .container .otziv {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8980392157);
+  border-radius: 20px;
+  padding: 50px 150px;
+  position: relative;
+}
+.site .klienti .container .otziv .fa-chevron-left {
+  position: absolute;
+  left: -30px;
+  top: 45%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #C5C1FE;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding: 18px 20px;
+}
+.site .klienti .container .otziv .fa-chevron-right {
+  position: absolute;
+  right: -30px;
+  top: 45%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #C5C1FE;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding: 18px 20px;
+}
+.site .klienti .container .otziv h2 {
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px 0;
+}
+.site .klienti .container .otziv .otziv-info {
+  margin: 50px 0;
+  display: flex;
+  gap: 50px;
+}
+.site .klienti .container .otziv .otziv-info .klient-img img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+.site .klienti .container .otziv .otziv-info .klient-info p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6B6868;
+  line-height: 31.54px;
+}
+.site .klienti .container .otziv .otziv-info .klient-info .imya {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.site .klienti .container .otziv .otziv-info .klient-info .imya h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2378C9;
+}
+.site .klienti .container .otziv .otziv-info .klient-info .imya .icon-img {
+  padding: 0 20px;
+}
+.site .klienti .container .otziv .otziv-info .klient-info .imya .icon-img img {
+  padding-left: 20px;
+}
+.site .zapis {
+  background: linear-gradient(-90deg, #DFEEFC, rgba(167, 210, 251, 0.9215686275));
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+}
+.site .zapis img {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  z-index: 1;
+}
+.site .zapis .container .priyom {
+  width: 40%;
+  border-radius: 20px;
+  background: #FFFFFF;
+  padding: 50px;
+  margin-left: 100px;
+  text-align: center;
+  box-shadow: 0px 0px 10px #A9A9A9;
+  z-index: 1000;
+}
+.site .zapis .container .priyom h3 {
+  font-size: 32px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.site .zapis .container .priyom input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #E4E4E4;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #A9A9A9;
+}
+.site .zapis .container .priyom .btnbig {
+  margin: 20px 0;
+}
+.site .zapis .container .priyom p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #A9A9A9;
+  padding: 10px 20px;
+}
+.site footer {
+  background: #10406F;
+}
+.site footer .foot {
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.site footer .foot .service {
+  width: 20%;
+  padding: 50px 50px 50px 0;
+  border-right: 1px solid #E4E4E4;
+}
+.site footer .foot .service img {
+  padding-bottom: 60px;
+}
+.site footer .foot .service p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.site footer .foot .service p i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.site footer .foot .service .navicon {
+  margin-top: 50px;
+}
+.site footer .foot .service .navicon i {
+  font-size: 20px;
+  color: #FFFFFF;
+  padding-right: 30px;
+}
+.site footer .foot .info-service {
+  width: 80%;
+  padding: 50px 0 50px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.site footer .foot .info-service .usluga h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.site footer .foot .info-service .usluga ul li {
+  padding-bottom: 15px;
+}
+.site footer .foot .info-service .usluga ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #E4E4E4;
+}
+.site footer .foot .info-service .nash h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.site footer .foot .info-service .nash ul li {
+  padding-bottom: 15px;
+}
+.site footer .foot .info-service .nash ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #E4E4E4;
+}
+.site footer .foot .info-service .chasi h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.site footer .foot .info-service .chasi ul li {
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #E4E4E4;
+}
+.site footer .end {
+  border-top: 1px solid #E4E4E4;
+  padding: 30px 0;
+  text-align: center;
+}
+.site footer .end p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #E4E4E4;
+}
+
+@media (max-width: 1000px) {
+  .site .novosti .container .news .newsblock {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .site .novosti .container .news .newsblock .news-info {
+    width: 70%;
+  }
+  .site .zapis img {
+    display: none;
+  }
+  .site .zapis .container .priyom {
+    width: 60%;
+    margin: auto;
+  }
+  .site footer .foot {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 800px) {
+  .site .nav .container .navtop .navphone {
+    display: none;
+  }
+  .site .nav .container .navtop .logobars {
+    display: block;
+  }
+  .site .navbar .container .logo .logo-menu {
+    display: none;
+  }
+  .site .header .container .head {
+    flex-direction: column;
+    position: relative;
+  }
+  .site .header .container .head .head-logo {
+    width: 90%;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .site .header .container .head .head-logo p {
+    display: none;
+  }
+  .site .header .container .head .head-logo .btnlit {
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    right: 25%;
+  }
+  .site .header .container .head .head-img {
+    width: 90%;
+  }
+  .site .header .container .head .head-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: -100px;
+  }
+  .site .klinika .container .about {
+    flex-direction: column;
+  }
+  .site .klinika .container .about .about-img {
+    width: 90%;
+  }
+  .site .klinika .container .about .about-info {
+    width: 90%;
+  }
+  .site .info-klinik .container .info-time {
+    flex-direction: column;
+  }
+  .site .spest .container .spest-vrach p {
+    padding: 20px 50px;
+  }
+  .site .spest .container .spest-vrach .vrach {
+    flex-wrap: wrap;
+  }
+  .site .spest .container .spest-vrach .vrach .vrach-info {
+    width: 45%;
+  }
+  .site .price img {
+    display: none;
+  }
+  .site .price .container .prozub {
+    width: 90%;
+    margin: auto;
+  }
+  .site .klienti .container .otziv .otziv-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .site .zapis .container .priyom {
+    width: 70%;
+    margin: auto;
+  }
+  .site footer {
+    padding: 0;
+  }
+  .site footer .foot {
+    flex-direction: column-reverse;
+  }
+  .site footer .foot .service {
+    width: 100%;
+    padding-left: 80px;
+    border-right: none;
+    border-top: 1px solid #E4E4E4;
+    text-align: center;
+  }
+  .site footer .foot .info-service {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .site .navbar .container .logo .logotip img {
+    width: 150px;
+  }
+  .site .navbar .container .logo .logobtn .btn-kirp {
+    width: 130px;
+    height: 40px;
+  }
+  .site .header .container .head .head-logo h1 {
+    font-size: 40px;
+  }
+  .site .header .container .head .head-logo .btnlit {
+    width: 200px;
+    height: 40px;
+    left: 15%;
+  }
+  .site .klinika .container .about .about-info {
+    padding: 30px 10px;
+  }
+  .site .klinika .container .about .about-info h2 {
+    font-size: 32px;
+    text-align: start;
+  }
+  .site .klinika .container .about .about-info p {
+    font-size: 14px;
+  }
+  .site .klinika .container .about .about-info .info-box ul li {
+    width: 100%;
+  }
+  .site .spest .container .spest-vrach h2 {
+    font-size: 32px;
+  }
+  .site .spest .container .spest-vrach p {
+    font-size: 14px;
+  }
+  .site .spest .container .spest-vrach .vrach {
+    flex-wrap: wrap;
+  }
+  .site .spest .container .spest-vrach .vrach .vrach-info {
+    width: 100%;
+  }
+  .site .price .container .prozub {
+    width: 100%;
+  }
+  .site .price .container .prozub .list h2 {
+    font-size: 32px;
+  }
+  .site .price .container .prozub .list h6 {
+    font-size: 14px;
+  }
+  .site .price .container .prozub .list div p {
+    font-size: 14px;
+    text-align: start;
+  }
+  .site .price .container .prozub .list div span {
+    font-size: 16px;
+  }
+  .site .novosti .container .news h2 {
+    font-size: 32px;
+  }
+  .site .novosti .container .news .newsblock .news-info div span {
+    font-size: 12px;
+  }
+  .site .novosti .container .news .newsblock .news-info h3 {
+    font-size: 18px;
+  }
+  .site .novosti .container .news .newsblock .news-info p {
+    font-size: 12px;
+  }
+  .site .novosti .container .news .newsblock .news-info .btnbig {
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .site .klienti .container .otziv {
+    padding: 50px;
+  }
+  .site .klienti .container .otziv .fa-chevron-left {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .site .klienti .container .otziv .fa-chevron-right {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .site .klienti .container .otziv h2 {
+    font-size: 32px;
+  }
+  .site .klienti .container .otziv .otziv-info .klient-info p {
+    font-size: 14px;
+  }
+  .site .klienti .container .otziv .otziv-info .klient-info .imya h3 {
+    font-size: 20px;
+  }
+  .site .zapis .container .priyom {
+    width: 100%;
+  }
+  .site .zapis .container .priyom h3 {
+    font-size: 24px;
+  }
+  .site .zapis .container .priyom .btnbig {
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Source Sans;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+button{
+    border: none;
+}
+
+.container{
+    padding: 0 15%;
+}
+@media(max-width:1100px){
+    .container{
+        padding: 0 5%;
+    }
+}
+
+

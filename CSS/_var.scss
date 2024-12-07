@@ -1,0 +1,66 @@
+
+// Colors
+$c-blue:#2378C9;
+$c-darkblue:#0E6EAA;
+$c-lightblue:#5EB8F0;
+$c-whiteblue:#DFEEFC;
+$c-white:#FFFFFF;
+$c-kirpich:#F86D6D;
+$c-black:#302D2D;
+$c-siren:#C5C1FE;
+$c-darkgrey:#6B6868;
+$c-skyblue:#67A9E9;
+$c-lightgray:#F6F6F6;
+$c-gray:#A9A9A9;
+$c-bordergray:#E4E4E4;
+$c-lightblack:#56565E;
+$c-liner-gradient: #DFEEFC, #A7D2FBEB;
+$c-footrangi:#10406F;
+
+
+
+.btn-kirp{
+    width: 208px;
+    height: 52px;
+    border-radius: 26px;
+    background: $c-kirpich;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: $c-white;
+    &:hover{
+        opacity: 70%;
+    }
+}
+.btnlit{
+    width:255px ;
+    height:59px ;
+    border-radius:29px ;
+    background: $c-lightblue;
+    color: $c-white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    &:hover{
+        background: $c-blue;
+        transition: 1s;
+    }
+}
+.btnbig{
+    // width: 327px;
+    // height: 53px;
+    padding: 18px 70px;
+    border-radius: 29px;
+    background: $c-lightblue;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: $c-white;
+    &:hover{
+        background: $c-blue;
+        transition: 1s;
+    }
+}
